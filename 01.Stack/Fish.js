@@ -24,3 +24,6 @@ const fish = (size, direction) => {
 const fishSize = [4, 3, 2, 1, 5];
 const fishDirection = [0, 1, 0, 0, 0];
 const res = fish(fishSize, fishDirection);
+
+
+// 栈中内容不一样可以储存索引
