@@ -12,10 +12,13 @@ var findSmallSeq = function(T, k) {
     }
     stack.push(i);
   }
+  while (stack.length > k) {
+    stack.pop();
+  }
   for (let i = 0; i < stack.length; i++) {
     result.push(T[stack[i]]);
   }
-  console.log(stack, "stack");
+
   return result;
 };
 
